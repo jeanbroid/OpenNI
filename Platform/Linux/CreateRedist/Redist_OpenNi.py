@@ -183,7 +183,7 @@ else:
         PLATFORM = "x64"
     elif machinetype == "x86" or machinetype == "i386" or machinetype == "i686":
         PLATFORM = "x86"
-    elif machinetype[:3] == "arm":
+    elif "arm" in machinetype:
         PLATFORM = "Arm"
     else:
         print "Unknown platform:", machinetype
